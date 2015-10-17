@@ -1,6 +1,7 @@
 # Vessel CMS
-Forked from [Meteor Chef](http://themeteorchef.com/base) and heavily inspired by [Base](https://github.com/themeteorchef/base)
-Content Management System Boilerplate, Meteor-powered.
+##Content Management System Boilerplate for Meteor.
+
+Credits: Ryan Glover of [Meteor Chef](http://themeteorchef.com/base) for creating [Base](https://github.com/themeteorchef/base)
 
 
 <table>
