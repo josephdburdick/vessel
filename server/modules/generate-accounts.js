@@ -50,13 +50,14 @@ let _checkIfAdmin = ( email ) => {
 };
 
 let _createUser = ( user ) => {
-  Accounts.createUser({
+  let userId = Accounts.createUser({
     email: user.email,
     password: user.password,
     profile: {
       name: user.name
     }
   });
+  return userId;
 };
 
 let _generateFakeUsers = ( count ) => {
