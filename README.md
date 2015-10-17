@@ -1,8 +1,14 @@
-# The Meteor Chef - Base
-A starting point for Meteor apps.
+# Vessel CMS
+Forked from [Meteor Chef](http://themeteorchef.com/base) and heavily inspired by [Base](https://github.com/themeteorchef/base)
+Content Management System Boilerplate, Meteor-powered.
+
 
 <table>
   <tbody>
+    <tr>
+      <th>Vessel Version</th>
+      <td>v0.0.1</td>
+    </tr>
     <tr>
       <th>Base Version</th>
       <td>v3.1.1</td>
@@ -14,4 +20,4 @@ A starting point for Meteor apps.
   </tbody>
 </table>
 
-[Read the Documentation](http://themeteorchef.com/base)
+[Read Base Documentation](http://themeteorchef.com/base)
