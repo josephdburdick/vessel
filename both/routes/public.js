@@ -36,3 +36,10 @@ publicRoutes.route( '/reset-password/:token', {
     BlazeLayout.render( 'default', { yield: 'resetPassword' } );
   }
 });
+
+publicRoutes.route( '/invite/:token', {
+  name: 'invite',
+  action() {
+    BlazeLayout.render( 'default', { yield: 'invite' } );
+  }
+});
