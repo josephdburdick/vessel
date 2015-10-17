@@ -17,7 +17,7 @@
               {{/if}} {{emails.[0].address}}
             </td>
             <td>
-              <select {{disableIfAdmin _id}} name="userRole" id="" class="form-control">
+              <select {{disableIfAdmin _id}} name="userRole" data-userid="{{_id}}" class="form-control">
                 <option selected="{{selected roles.[0] 'admin'}}" value="admin">Admin</option>
                 <option selected="{{selected roles.[0] 'manager'}}" value="manager">Manager</option>
                 <option selected="{{selected roles.[0] 'employee'}}" value="employee">Employee</option>

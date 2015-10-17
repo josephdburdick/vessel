@@ -24,11 +24,11 @@ Template.users.helpers({
 });
 
 Template.users.events({
-  'change [name="userRole"]': function(event, template) {
+  'change [name="userRole"]': (event, template) => {
     let role = $(event.target).find('option:selected').val();
 
     Meteor.call("setRoleOnUser", {
-      user: this._id,
+      user: event.target.getAttribute('data-userid'),
       role: role
     }, (error, response) => {
       if (error) {
@@ -36,7 +36,7 @@ Template.users.events({
       }
     });
   },
-  'click .revoke-invite': function(event, template) {
+  'click .revoke-invite': ( event, template ) => {
     if (confirm("Are you sure? This is permanent.")) {
       Meteor.call("revokeInvitation", this._id, function(error, response) {
         if (error) {
