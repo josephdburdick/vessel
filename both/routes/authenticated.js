@@ -24,6 +24,13 @@ authenticatedRoutes.route( '/dashboard', {
 });
 
 
+/*
+ * User, Managers and Employees routes for Admin Panel
+ */
+//Prevent app crashing for now:
+let blockUnauthorizedAdmin = null,
+    blockUnauthorizedManager = null;
+
 authenticatedRoutes.route('/users', {
   name: 'users',
   triggersEnter: [blockUnauthorizedAdmin],
@@ -34,7 +41,7 @@ authenticatedRoutes.route('/users', {
 
 authenticatedRoutes.route('/managers', {
   name: 'managers',
-  triggersEnter: [blockUnauthorizedAdmin],
+  triggersEnter: [blockUnauthorizedManager],
   action () {
     BlazeLayout.render( 'default', { yield: 'managers' });
   }
@@ -42,7 +49,6 @@ authenticatedRoutes.route('/managers', {
 
 authenticatedRoutes.route('/employees', {
   name: 'employees',
-  triggersEnter: [blockUnauthorizedAdmin],
   action () {
     BlazeLayout.render( 'default', { yield: 'employees' });
   }
