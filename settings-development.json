@@ -1,8 +1,35 @@
 {
   "public": {
-    "key": "value"
+    "info":{
+      "brand": {
+        "name": "Application Boilerplate"
+      },
+      "cms":{
+        "about": "Vessel is a CMS boilerplate built for Meteor.",
+        "credits": [
+          {
+            "name": "Joe Burdick",
+            "brand": "JOEY",
+            "url": "http://github.com/josephdburdick",
+            "role": "Author of Vessel"
+          },
+          {
+            "name": "Ryan Glover",
+            "brand": "Meteor Chef",
+            "url": "http://github.com/themeteorchef",
+            "role": "Creator of Base, which serves as the core Vessel."
+          }
+        ]
+      }
+    }
   },
   "private": {
-    "key": "value"
+    "domain" : "localhost",
+    "brand": { "name": "Application Name" },
+    "cms":   { "name" : "Vessel" },
+    "email": {
+      "name": "Joe Burdick",
+      "address": "joe@vesselcms.com"
+    }
   }
 }
