@@ -30,6 +30,12 @@
     "email": {
       "name": "Joe Burdick",
       "address": "joe@vesselcms.com"
+    },
+    "services": {
+      "mailgun":{
+        "mail_url": "",
+        "mail_url_pass": ""
+      }
     }
   }
 }
