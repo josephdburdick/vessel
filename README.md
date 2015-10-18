@@ -1,6 +1,33 @@
 # Vessel CMS
 ##Content Management System Boilerplate for Meteor.
 
+### Installation
+
+- Install Meteor:
+
+```sh
+$ curl https://install.meteor.com | /bin/sh
+```
+
+- Git clone this repo and cd into it.
+
+```sh
+$ git clone https://github.com/josephdburdick/vessel.git
+$ cd vessel
+```
+
+- Run Vessel:
+
+```sh
+$ npm start
+```
+
+- Debug Vessel:
+
+```sh
+$ npm run-script debug
+```
+
 Credits: Ryan Glover of [Meteor Chef](http://themeteorchef.com/base) for creating [Base](https://github.com/themeteorchef/base)
 
 
