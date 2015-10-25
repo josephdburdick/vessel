@@ -1,6 +1,6 @@
-const publicRedirect = () => {
+const publicRedirect = ( context, redirect ) => {
   if ( Meteor.userId() ) {
-    FlowRouter.go( 'index' );
+    Modules.both.redirectUser( { redirect: redirect } );
   }
 };
 

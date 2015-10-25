@@ -1,9 +1,3 @@
-const authenticatedRedirect = () => {
-  if ( !Meteor.loggingIn() && !Meteor.userId() ) {
-    FlowRouter.go( 'login' );
-  }
-};
-
 const blockUnauthorizedAdmin = ( context, redirect ) => {
  if ( Meteor.userId() && !Roles.userIsInRole( Meteor.userId(), 'admin' ) ) {
    Modules.both.redirectUser( { redirect: redirect } );
@@ -15,6 +9,13 @@ const blockUnauthorizedManager = ( context, redirect ) => {
    Modules.both.redirectUser( { redirect: redirect } );
  }
 };
+
+const authenticatedRedirect = () => {
+  if ( !Meteor.loggingIn() && !Meteor.userId() ) {
+    FlowRouter.go( 'login' );
+  }
+};
+
 
 const authenticatedRoutes = FlowRouter.group({
   name: 'authenticated',
