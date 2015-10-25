@@ -1,5 +1,5 @@
 Meteor.methods({
-  sendInvitation( invitation ) {
+  sendInvitation: ( invitation ) => {
     check( invitation, {
       email: String,
       role: String

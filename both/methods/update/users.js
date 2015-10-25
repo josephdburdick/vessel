@@ -1,5 +1,5 @@
 Meteor.methods({
-  setRoleOnUser ( options ) {
+  setRoleOnUser: ( options ) => {
     check( options, {
      user: String,
      role: String
