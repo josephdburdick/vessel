@@ -1,5 +1,5 @@
 Meteor.methods({
-  insertMethod( argument ) {
+  insertMethod ( argument ) {
     check( argument, Object );
 
     try {
