@@ -1,13 +1,13 @@
 let startup = () => {
-  _setMailService()
+  _setEnvironmentVariables()
   _setBrowserPolicies();
   _generateAccounts();
 };
 
+var _setEnvironmentVariables = () => Modules.server.setEnvironmentVariables();
+
 var _setBrowserPolicies = () => {};
 
 var _generateAccounts = () => Modules.server.generateAccounts();
-
-var _setMailService = () => Modules.server.setMailService();
 
 Modules.server.startup = startup;
